@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Smart fridge</title>
+  <meta name="description" content="This is my HTML5 boilerplate.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="msapplication-TileColor" content="#FFBD00">
+  <meta name="theme-color" content="#FFBD00">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="../static/img/jpg/LOGO.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../static/img/jpg/LOGO.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../static/img/jpg/LOGO.png">
+  <link rel="manifest" href="../site.webmanifest">
+  <link rel="mask-icon" href="../static/img/jpg/LOGO.png" color="#FFBD00">
+
+  <link rel="stylesheet" href="../static/css/normalize.css">
+  <link rel="stylesheet" href="../static/css/screen.css">
+
+</head>
+
+<body>
+  <div class="c-page">
+    <header class="o-row o-row--md o-row--header">
+      <div class="o-container">
+        <div class="c-header">
+          <div class="c-header__logo">
+            <h1 class="c-logo">
+
+                                <img class="c-logo__symbol" src="../static/img/jpg/LOGO.png" viewBox="0 0 130 40">
+                            </h1>
+          </div>
+          <div class="c-header__nav c-header__nav--main">
+            <nav class="c-nav">
+              <ul class="o-list c-nav__list">
+                <li class="c-nav__item"><a href="#!" class="c-nav__link">Add action</a></li>
+                <li class="c-nav__item"><a href="/adduser" class="c-nav__link">Add user</a></li>
+                <li class="c-nav__item"><a href="/" class="c-nav__link c-nav__link-button">LOGOUT</a></li>
+              </ul>
+            </nav>
+          </div>
+
+
+        </div>
+      </div>
+    </header>
+
+    <section class="o-row o-row--lg o-row--background-oker">
+      <div class="o-container">
+        <article class="o-section o-section--lg">
+          <div class="o-layout o-layout--gutter-lg o-layout--align-end">
+
+            <div class="o-layout__item u-1-of-2-bp3">
+              <header class="c-title-icon">
+                <h2 class="c-lead c-lead--xxl">
+                                        Welcome Admin
+                                    </h2>
+              </header>
+
+            </div>
+
+          </div>
+        </article>
+
+
+
+        <article class="o-section o-section--lg">
+          <div class="o-layout o-layout--gutter-lg o-layout--align-center">
+
+            <table class="table">
+                            <tr>
+                                <th>Logging ID</th>
+                                <th>Actie ID</th>
+                                <th>Username</th>
+                                <th>Function</th>
+                                <th>Drinks</th>
+                                <th>Number</th>
+                                <th>Time</th>
+
+                            </tr>
+                            {% for log in data %}
+                             <tr>
+                                   <td>{{ log[0] }}</td>
+                                   <td>{{ log[1] }}</td>
+                                   <td>{{ log[2] }}</td>
+                                   <td>{{ log[3] }}</td>
+                                   <td>{{ log[4] }}</td>
+                                   <td>{{ log[5] }}</td>
+                                   <td>{{ log[6] }}</td>
+                          </tr>
+    {% endfor %}
+                        </table>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+
+    <footer class="o-row o-row--md">
+      <div class="o-container">
+        <div class="c-footer">
+
+          <div class="c-footer__nav">
+            <nav class="c-nav c-nav--meta">
+              <ul class="o-list c-nav__list">
+                <li class="c-nav__item"><a href="http://student.howest.be/nicolas.stragier/portfolio/" class="c-nav__link c-nav__link--meta">Portfolio</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="c-footer__nav">
+            <nav class="c-nav c-nav--meta">
+              <ul class="o-list c-nav__list">
+                <li class="c-nav__item"><a href="https://www.linkedin.com/in/nicolas-stragier-9abb66142" class="c-nav__link c-nav__link--meta">LinkedIn</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+
+
+
+</body>
+
+</html>
